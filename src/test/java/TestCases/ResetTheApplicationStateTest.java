@@ -14,27 +14,34 @@ public class ResetTheApplicationStateTest extends BasePage {
         super.setUp();
         resetTheApplicationStatePage = new ResetTheApplicationStatePage(driver);
     }
+
     @Test
     public void AsGuest() throws InterruptedException {
         resetTheApplicationStatePage.clickAddtoCartbutton();
         resetTheApplicationStatePage.clickAddtoWishlistbutton();
         resetTheApplicationStatePage.clickResetbutton();
     }
+
     @Test
     public void NormalUser() throws InterruptedException {
         resetTheApplicationStatePage.clickonPortalLogin();
-        resetTheApplicationStatePage.NormalUser();
-        resetTheApplicationStatePage.UniquePassword();
+        resetTheApplicationStatePage.clickonUsernameField();
+        resetTheApplicationStatePage.normalUser();
+        resetTheApplicationStatePage.clickonPasswordField();
+        resetTheApplicationStatePage.uniquePassword();
         resetTheApplicationStatePage.clickLoginButton();
         resetTheApplicationStatePage.clickAddtoCartbutton();
         resetTheApplicationStatePage.clickAddtoWishlistbutton();
         resetTheApplicationStatePage.clickResetbutton();
     }
+
     @Test
     public void UserWithBugs() throws InterruptedException{
         resetTheApplicationStatePage.clickonPortalLogin();
-        resetTheApplicationStatePage.UserWithBugs();
-        resetTheApplicationStatePage.UniquePassword();
+        resetTheApplicationStatePage.clickonUsernameField();
+        resetTheApplicationStatePage.userWithBugs();
+        resetTheApplicationStatePage.clickonPasswordField();
+        resetTheApplicationStatePage.uniquePassword();
         resetTheApplicationStatePage.clickLoginButton();
         resetTheApplicationStatePage.clickAddtoCartbutton();
         resetTheApplicationStatePage.clickAddtoWishlistbutton();
@@ -44,8 +51,10 @@ public class ResetTheApplicationStateTest extends BasePage {
     @Test
     public void SlowerUser() throws InterruptedException {
         resetTheApplicationStatePage.clickonPortalLogin();
-        resetTheApplicationStatePage.SlowUser();
-        resetTheApplicationStatePage.UniquePassword();
+        resetTheApplicationStatePage.clickonUsernameField();
+        resetTheApplicationStatePage.slowUser();
+        resetTheApplicationStatePage.clickonPasswordField();
+        resetTheApplicationStatePage.uniquePassword();
         resetTheApplicationStatePage.clickLoginButton();
         resetTheApplicationStatePage.clickAddtoCartbutton();
         resetTheApplicationStatePage.clickAddtoWishlistbutton();
@@ -55,8 +64,10 @@ public class ResetTheApplicationStateTest extends BasePage {
     @Test
     public void LockedOutUser() throws InterruptedException {
         resetTheApplicationStatePage.clickonPortalLogin();
-        resetTheApplicationStatePage.LockedOutUser();
-        resetTheApplicationStatePage.UniquePassword();
+        resetTheApplicationStatePage.clickonUsernameField();
+        resetTheApplicationStatePage.lockedOutUser();
+        resetTheApplicationStatePage.clickonPasswordField();
+        resetTheApplicationStatePage.uniquePassword();
         resetTheApplicationStatePage.clickLoginButton();
         resetTheApplicationStatePage.clickAddtoCartbutton();
         resetTheApplicationStatePage.clickAddtoWishlistbutton();

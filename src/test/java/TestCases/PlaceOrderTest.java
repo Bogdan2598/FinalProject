@@ -21,68 +21,73 @@ public class PlaceOrderTest extends BasePage {
         placeOrderPage.clickCartIcon();
         placeOrderPage.clickCheckoutbutton();
         placeOrderPage.clickFirstNameField();
-        placeOrderPage.FirstName();
+        placeOrderPage.firstName();
         placeOrderPage.clickLastNameField();
-        placeOrderPage.LastName();
+        placeOrderPage.lastName();
         placeOrderPage.clickAdressField();
-        placeOrderPage.Adress();
+        placeOrderPage.adress();
         placeOrderPage.clickContinueCheckoutbutton();
         placeOrderPage.clickCompleteYourOrderbutton();
         Assert.assertEquals("Thank you for your order!", "Thank you for your order!");
     }
+
     @Test
     public void PlaceOrderNormalUser() throws InterruptedException {
         placeOrderPage.clickonPortalLogin();
-        placeOrderPage.NormalUser();
-        placeOrderPage.UniquePassword();
+        placeOrderPage.normalUser();
+        placeOrderPage.uniquePassword();
         placeOrderPage.clickLoginButton();
         placeOrderPage.clickAddtoCartbutton();
         placeOrderPage.clickCartIcon();
         placeOrderPage.clickCheckoutbutton();
         placeOrderPage.clickFirstNameField();
-        placeOrderPage.FirstName();
+        placeOrderPage.firstName();
         placeOrderPage.clickLastNameField();
-        placeOrderPage.LastName();
+        placeOrderPage.lastName();
         placeOrderPage.clickAdressField();
-        placeOrderPage.Adress();
+        placeOrderPage.adress();
         placeOrderPage.clickContinueCheckoutbutton();
         placeOrderPage.clickCompleteYourOrderbutton();
         Assert.assertEquals("Thank you for your order!", "Thank you for your order!");
     }
+
     @Test
     public void PlaceOrderUserWithBugs() throws InterruptedException {
         placeOrderPage.clickonPortalLogin();
-        placeOrderPage.UserWithBugs();
-        placeOrderPage.UniquePassword();
+        placeOrderPage.clickonUsernameField();
+        placeOrderPage.userWithBugs();
+        placeOrderPage.clickonPasswordField();
+        placeOrderPage.uniquePassword();
         placeOrderPage.clickLoginButton();
         placeOrderPage.clickAddtoCartbutton();
         placeOrderPage.clickCartIcon();
         placeOrderPage.clickCheckoutbutton();
         placeOrderPage.clickFirstNameField();
-        placeOrderPage.FirstName();
+        placeOrderPage.firstName();
         placeOrderPage.clickLastNameField();
-        placeOrderPage.LastName();
+        placeOrderPage.lastName();
         placeOrderPage.clickAdressField();
-        placeOrderPage.Adress();
+        placeOrderPage.adress();
         placeOrderPage.clickContinueCheckoutbutton();
         placeOrderPage.clickCompleteYourOrderbutton();
         Assert.assertEquals("Thank you for your order!", "Thank you for your order!");
     }
+
     @Test
     public void PlaceOrderSlowerUser() throws InterruptedException{
         placeOrderPage.clickonPortalLogin();
-        placeOrderPage.SlowUser();
-        placeOrderPage.UniquePassword();
+        placeOrderPage.slowUser();
+        placeOrderPage.uniquePassword();
         placeOrderPage.clickLoginButton();
         placeOrderPage.clickAddtoCartbutton();
         placeOrderPage.clickCartIcon();
         placeOrderPage.clickCheckoutbutton();
         placeOrderPage.clickFirstNameField();
-        placeOrderPage.FirstName();
+        placeOrderPage.firstName();
         placeOrderPage.clickLastNameField();
-        placeOrderPage.LastName();
+        placeOrderPage.lastName();
         placeOrderPage.clickAdressField();
-        placeOrderPage.Adress();
+        placeOrderPage.adress();
         placeOrderPage.clickContinueCheckoutbutton();
         placeOrderPage.clickCompleteYourOrderbutton();
         Assert.assertEquals("Thank you for your order!", "Thank you for your order!");
@@ -90,21 +95,20 @@ public class PlaceOrderTest extends BasePage {
     @Test
     public void PlaceOrderLockedOurUser() throws InterruptedException{
         placeOrderPage.clickonPortalLogin();
-        placeOrderPage.LockedOutUser();
-        placeOrderPage.UniquePassword();
+        placeOrderPage.lockedOutUser();
+        placeOrderPage.uniquePassword();
         placeOrderPage.clickLoginButton();
         placeOrderPage.clickAddtoCartbutton();
         placeOrderPage.clickCartIcon();
         placeOrderPage.clickCheckoutbutton();
         placeOrderPage.clickFirstNameField();
-        placeOrderPage.FirstName();
+        placeOrderPage.firstName();
         placeOrderPage.clickLastNameField();
-        placeOrderPage.LastName();
+        placeOrderPage.lastName();
         placeOrderPage.clickAdressField();
-        placeOrderPage.Adress();
+        placeOrderPage.adress();
         placeOrderPage.clickContinueCheckoutbutton();
         placeOrderPage.clickCompleteYourOrderbutton();
         Assert.assertEquals("Thank you for your order!", "Thank you for your order!");
     }
-
 }

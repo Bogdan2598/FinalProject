@@ -17,32 +17,40 @@ public class LoginTest  extends BasePage {
     @Test
     public void NormalUser() throws InterruptedException {
         loginPage.clickonPortalLogin();
-        loginPage.NormalUser();
-        loginPage.UniquePassword();
+        loginPage.clickonUsernameField();
+        loginPage.normalUser();
+        loginPage.clickonPasswordField();
+        loginPage.uniquePassword();
         loginPage.clickLoginButton();
     }
 
     @Test
     public void UserWithBugs() throws InterruptedException{
         loginPage.clickonPortalLogin();
-        loginPage.UserWithBugs();
-        loginPage.UniquePassword();
+        loginPage.clickonUsernameField();
+        loginPage.userWithBugs();
+        loginPage.clickonPasswordField();
+        loginPage.uniquePassword();
         loginPage.clickLoginButton();
     }
 
     @Test
     public void SloweUser() throws InterruptedException {
         loginPage.clickonPortalLogin();
-        loginPage.SlowUser();
-        loginPage.UniquePassword();
+        loginPage.clickonUsernameField();
+        loginPage.slowUser();
+        loginPage.clickonPasswordField();
+        loginPage.uniquePassword();
         loginPage.clickLoginButton();
     }
 
     @Test
     public void LockedOutUser() throws InterruptedException {
         loginPage.clickonPortalLogin();
-        loginPage.LockedOutUser();
-        loginPage.UniquePassword();
+        loginPage.clickonUsernameField();
+        loginPage.lockedOutUser();
+        loginPage.clickonPasswordField();
+        loginPage.uniquePassword();
         loginPage.clickLoginButton();
     }
 }

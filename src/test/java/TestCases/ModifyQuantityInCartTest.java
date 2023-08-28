@@ -17,8 +17,8 @@ public class ModifyQuantityInCartTest extends BasePage {
     public void ModifyQuantity() throws InterruptedException {
         modifyQuantityInCartPage.clicktoCarticon();
         modifyQuantityInCartPage.clickCartPage();
-        modifyQuantityInCartPage.PlusQuatity();
-        modifyQuantityInCartPage.PlusQuatity();
-        modifyQuantityInCartPage.PlusQuatity();
+        modifyQuantityInCartPage.plusQuatity();
+        modifyQuantityInCartPage.plusQuatity();
+        modifyQuantityInCartPage.plusQuatity();
     }
 }

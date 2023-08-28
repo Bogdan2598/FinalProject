@@ -25,7 +25,6 @@ public class BasePage {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(baseURL);
-
     }
     @AfterMethod
     public void tearDown() {
